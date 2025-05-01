@@ -17,7 +17,7 @@ body {
   background: url('assets/cock-bg.png');
   overflow: hidden;
   margin: 20px auto;
-  cursor: url('slipper.png'), auto;
+  cursor: url('assets/slipper.png'), auto;
 }
 
 .cockroach {
