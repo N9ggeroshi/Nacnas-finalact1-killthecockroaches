@@ -1,0 +1,86 @@
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #F5F5DC;
+}
+
+#game-container {
+  margin: 20px;
+  cursor: url('assets/slipper.png'), auto;
+}
+
+#cockroach-area {
+  position: relative;
+  width: 80%;
+  height: 700px;
+  background: url('assets/cock-bg.png');
+  overflow: hidden;
+  margin: 20px auto;
+  cursor: url('slipper.png'), auto;
+}
+
+.cockroach {
+  width: 80px;
+  height: 130px;
+  position: absolute;
+  background: url('assets/cockroach.png') no-repeat center center;
+  background-size: cover;
+  cursor: url('assets/slipper.png'), auto;
+}
+.dead {
+  background: url('assets/dead-cockroach.png') no-repeat center center;
+  background-size: cover;
+}
+.popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#start-btn {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2c2c2c;
+  color: rgb(0, 0, 0);
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+}
+
+.popup button {
+  margin-top: 15px;
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
